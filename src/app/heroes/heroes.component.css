@@ -36,7 +36,7 @@ li a {
  transition: font-size 0.3s ease, background-color 0.3s ease;
 }
 
-li a:hover {
+a:hover {
  font-size: 30px;
- background: #f6f6f6;
+ background: #f10606;
 }
