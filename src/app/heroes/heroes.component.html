@@ -1,13 +1,12 @@
 <div>
 <h2>My Heores</h2>
-</div>
-<div class="list-group">
+
 <ul class="heroes">
-  <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero" class="list-group-item justify-content-between">
-    {{hero.name}}
-    <span class="badge badge-default badge-pill">{{hero.id}} </span>
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero" >
+    
+    <span class="badge">{{hero.id}} </span>{{hero.name}}
   </li>
 </ul>
-</div>
+
 <app-hero-detail [selectedHero]="selectedHero"></app-hero-detail>
 

@@ -1,15 +1,14 @@
 <div *ngIf="selectedHero" >
-<div class="d-flex justify-content-center">
+
     <h2>
         {{selectedHero.name | uppercase}} details
     </h2>
-</div>
 
-<div class="d-flex justify-content-center">
-    id :
+<div><span>id : </span>
+    
     {{selectedHero.id}}
 </div>
 
-<div class="d-flex justify-content-center" >
+<div>
     <label>name : <input [(ngModel)]="selectedHero.name" placeholder="name"></label></div>
 </div>
